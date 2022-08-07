@@ -6,17 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <fragment
-        android:id="@+id/ux_fragment"
-        android:name="com.google.ar.sceneform.ux.ArFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
     <Button
-        android:id="@+id/btn"
+        android:id="@+id/btn_static"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Animated"
+        android:text="Static AR"
         app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <Button
+        android:id="@+id/btn_transformable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transformable AR"
+        app:layout_constraintTop_toBottomOf="@id/btn_static"/>
+
+    <Button
+        android:id="@+id/btn_animation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Animation AR"
+        app:layout_constraintTop_toBottomOf="@id/btn_transformable"/>
+
+    <Button
+        android:id="@+id/btn_augmented_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Augmented Images AR"
+        app:layout_constraintTop_toBottomOf="@id/btn_animation"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
