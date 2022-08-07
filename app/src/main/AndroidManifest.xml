@@ -16,7 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ARTransformable"></activity>
+        <activity android:name=".CarGame.ARCarGame"></activity>
+        <activity android:name=".ARTransformable" />
         <activity android:name=".ARAugmentedImage" />
         <activity android:name=".ARstatic" />
         <activity android:name=".ARwithAnimation" />

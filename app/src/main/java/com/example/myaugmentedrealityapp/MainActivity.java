@@ -13,12 +13,14 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.myaugmentedrealityapp.CarGame.ARCarGame;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
     private static final double MIN_OPENGL_VERSION = 3.0;
 
-    private Button btn_static,btn_transformable,btn_animation , btn_augmented_images;
+    private Button btn_static,btn_transformable,btn_animation , btn_augmented_images,btn_car_game;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         btn_transformable =findViewById(R.id.btn_transformable);
         btn_animation =findViewById(R.id.btn_animation);
         btn_augmented_images =findViewById(R.id.btn_augmented_images);
+        btn_car_game =findViewById(R.id.btn_car_game);
 
         btn_static.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +64,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i =new Intent(MainActivity.this,ARAugmentedImage.class);
+                startActivity(i);
+            }
+        });
+
+
+        btn_car_game.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i =new Intent(MainActivity.this, ARCarGame.class);
                 startActivity(i);
             }
         });

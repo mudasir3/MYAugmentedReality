@@ -37,4 +37,11 @@
         app:layout_constraintTop_toBottomOf="@id/btn_animation"/>
 
 
+    <Button
+        android:id="@+id/btn_car_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Car Game AR"
+        app:layout_constraintTop_toBottomOf="@id/btn_augmented_images"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

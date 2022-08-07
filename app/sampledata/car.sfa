@@ -1,0 +1,197 @@
+{
+  animations: [
+    {
+      path: 'sampledata/car.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'box',
+      parameters: [
+        {
+          baseColor: [
+            0.80000000000000004,
+            0.80000000000000004,
+            0.80000000000000004,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'Futuristic_Car.001',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'Futuristic_Car_C',
+        },
+        {
+          normalMap: 'Futuristic_Car_N',
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'Futuristic_Car_black.001',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'Futuristic_Car_S',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'Futuristic_Car_glass.001',
+      parameters: [
+        {
+          baseColor: [
+            0,
+            0,
+            0,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'Color',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/car.fbx',
+    name: 'car',
+    recenter: 'root',
+    scale: 0.445442,
+  },
+  samplers: [
+    {
+      file: 'sampledata\\textures\\Futuristic_Car_S.jpg',
+      name: 'Futuristic_Car_S',
+      pipeline_name: 'textures\\Futuristic_Car_S.jpg',
+    },
+    {
+      file: 'sampledata\\textures\\Futuristic_Car_C.jpg',
+      name: 'Futuristic_Car_C',
+      pipeline_name: 'textures\\Futuristic_Car_C.jpg',
+    },
+    {
+      file: 'sampledata\\textures\\Futuristic_Car_N.jpg',
+      name: 'Futuristic_Car_N',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'textures\\Futuristic_Car_N.jpg',
+    },
+  ],
+  version: '0.54:2',
+}
