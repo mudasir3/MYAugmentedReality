@@ -253,7 +253,7 @@ public class ARCarGame extends AppCompatActivity {
                 score = 0;
                 //rendering the car
                 ModelRenderable.builder()
-                        .setSource(this, R.raw.biplane_01)
+                        .setSource(this, R.raw.bear)
                         .build()
                         .thenAccept(modelRenderable ->
                                 addCar(modelRenderable))
@@ -434,6 +434,8 @@ public class ARCarGame extends AppCompatActivity {
         carNode = new Node();
         carNode.setParent(anchornode);
         carNode.setRenderable(modelRenderable);
+        carNode.setLocalScale(new Vector3(5f, 5f, 5f));
+        //carNode.setWorldScale(new Vector3(0.3f, 0.3f, 0.3f));
 
         //car translation animation
         drive = new ObjectAnimator();

@@ -71,7 +71,7 @@ dependencies {
 
 }
 
-sceneform.asset('sampledata/biplane.fbx',
+sceneform.asset('sampledata/models/bear.fbx',
         'default',
-        'sampledata/biplane.sfa',
-        'src/main/res/raw/biplane')
+        'sampledata/models/bear.sfa',
+        'src/main/res/raw/bear')
